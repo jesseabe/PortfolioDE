@@ -40,4 +40,4 @@ class MetricasComprasOut(pa.DataFrameModel):
     UMB: Series[str]
     Montante: Series[float]
     Moeda: Series[str]
-    Taxa_Cambio: Series[int]
+    Taxa_Cambio: Series[float]

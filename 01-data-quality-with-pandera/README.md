@@ -80,7 +80,8 @@ source .venv/bin/activate
 pip install pandas
 pip install pandera
 pip install pyodbc
-pip install dotenv
+pip install python--dotenv
 pip install sqlalchemy
 pip install datetime
+pip install openpyxl
 ```

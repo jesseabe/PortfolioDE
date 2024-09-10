@@ -10,6 +10,3 @@ def extrai_dados_vendas(dir_arquivo: str) -> pd.DataFrame:
 @pa.check_output(MetricasVendasOut, lazy=True)
 def transforma_dados_vendas(df: pd.DataFrame) -> pd.DataFrame:
     pass
-
-def carrega_dados_vendas(df: pd.DataFrame) -> None:
-    pass

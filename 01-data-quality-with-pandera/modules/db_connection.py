@@ -17,6 +17,9 @@ def carrega_dados(df: pd.DataFrame, nome_da_tabela: str) -> None:
     engine = create_engine(POSTGRES_DATABASE_URL)
 
     try:
-        df.to_sql(nome_da_tabela, engine, if_exists="replace", index=False)
+        df.to_sql(nome_da_tabela, engine, if_exists= "replace", index = False)
     except Exception as e:
         print(e)
+    finally:
+        # Libera os recursos do engine
+        engine.dispose()
