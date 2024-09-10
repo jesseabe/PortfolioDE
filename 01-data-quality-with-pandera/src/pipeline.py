@@ -5,10 +5,10 @@ import os
 # Adiciona o diretório raiz do projeto ao sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from etl_compras import extrai_dados_compras, transforma_dados_compras
+from etl_compras import extrai_dados_compras, transforma_dados_compras, carrega_dados_compras
 #from etl_estoque import extrai_dados_estoque, transforma_dados_estoque
 #from etl_vendas import extrai_dados_vendas, transforma_dados_vendas
-from modules.db_connection import carrega_dados
+#from modules.db_connection import carrega_dados
 
 def run_etl_compras():
     dir_arquivo = "data/compras.xlsx"
@@ -17,7 +17,7 @@ def run_etl_compras():
     if not df.empty:
         df_transformado = transforma_dados_compras(df)
         print("Dados de compras transformados")
-        carrega_dados(df_transformado)
+        carrega_dados_compras(df_transformado, "compras")
 
 # def run_etl_estoque():
 #     dir_arquivo = "data/estoque.xlsx"
