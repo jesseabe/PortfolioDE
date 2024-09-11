@@ -2,6 +2,8 @@ import pandas as pd
 import os
 from sqlalchemy import create_engine
 from dotenv import load_dotenv
+import psycopg2
+from psycopg2 import Error
 
 def carrega_dados(df: pd.DataFrame, nome_da_tabela: str) -> None:
     load_dotenv(".env")
@@ -23,3 +25,26 @@ def carrega_dados(df: pd.DataFrame, nome_da_tabela: str) -> None:
     finally:
         # Libera os recursos do engine
         engine.dispose()
+
+
+def connectpostgres():
+    # Get environment variables
+    user = os.getenv("POSTGRES_USER")
+    password = os.getenv("POSTGRES_PASSWORD")
+    host = os.getenv("POSTGRES_HOST")
+    port = os.getenv("POSTGRES_PORT")
+    dbname = os.getenv("POSTGRES_DB")
+
+    # Create connection
+    connect = psycopg2.connect(
+        user=user,
+        password=password,
+        host=host,
+        port=port,
+        dbname=dbname
+    )
+
+    # Create a cursor object
+    cursor = connect.cursor()
+    connect.autocommit = True
+    return cursor

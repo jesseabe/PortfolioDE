@@ -10,7 +10,7 @@ UMB = "UMB"
 
 # Create the DataFrameModel class using the valid Python identifiers
 class MetricasEstoqueBase(pa.DataFrameModel):
-    ID_Material: Series[str]
+    ID_Material: Series[int]
     Data: Series[pa.Timestamp] 
     Valor: Series[float]
     Quantidade: Series[float]
@@ -21,7 +21,7 @@ class MetricasEstoqueBase(pa.DataFrameModel):
         coerce = True
 
 class MetricasEstoqueOut(pa.DataFrameModel):
-    ID_Material: Series[str]
+    ID_Material: Series[int]
     Data: Series[pa.Timestamp] 
     Valor: Series[float]
     Quantidade: Series[float]
