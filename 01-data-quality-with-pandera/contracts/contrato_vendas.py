@@ -5,7 +5,7 @@ import pandas as pd
 Data = "Data"
 ID_Material = "ID do material"
 Material_desc = "Descricao do material"
-Faturameto = "Venda em reais"
+Faturamento = "Venda em reais"
 
 # Create the DataFrameModel class using the valid Python identifiers
 class MetricasVendasBase(pa.DataFrameModel):
