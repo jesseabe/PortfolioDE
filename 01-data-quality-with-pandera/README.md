@@ -2,6 +2,9 @@
 
 Este repositório contém um exemplo de um dos projetos que implementei no ambiente corporativo em uma das empresas em que trabalhei. O objetivo foi criar **contratos de dados**, a partir do entendimento do negócio, inputs e outputs desejados, e implementá-los dentro do pipeline **ETL** para que somente os dados que estejam de acordo com os contratos pré-definidos sejam enviados ao banco de dados.
 
+![Data Quality Flow](images/DataQuality.png)
+
+
 ## Objetivos principais:
 
 1. **Definição de contratos de dados**:
