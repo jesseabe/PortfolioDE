@@ -1,3 +1,4 @@
+```bash
 /03-webscraping-competitive-intelligence
 │
 ├── .github/                # Arquivos de configuração do GitHub (Actions, workflows)
@@ -34,3 +35,4 @@
 ├── .env                    # Variáveis de ambiente (não enviar ao GitHub)
 ├── requirements.txt        # Dependências do projeto (Python)
 └── README.md               # Documentação do projeto
+```
