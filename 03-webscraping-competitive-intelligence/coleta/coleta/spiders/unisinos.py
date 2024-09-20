@@ -21,17 +21,19 @@ class UnisinosSpider(scrapy.Spider):
         curso = response.css('h1[data-gtm-course-name="true"]::text').get()
         mensalidade_original = response.css('p.mensalidade.original[data-gtm-course-price]::text').getall()
         mensalidade_promo = response.css('p.mensalidade.promo[data-gtm-course-price]::text').getall()
-        duracao = response.css('span svg + span::text').getall()  # Ajuste conforme o layout do site
+        duracao_all = response.css('div.pricing-box-items span::text').getall()  # Ajuste conforme o layout do site
         primeiro_mensalidade_original = mensalidade_original[3] if mensalidade_original else None
         primeiro_mensalidade_promo = mensalidade_promo[3] if mensalidade_promo else None
+        duracao_curso = [duracao.strip() for duracao in duracao_all if "Duração:" in duracao]
+        duracao_curso = duracao_curso[0]
 
-        # Retorna as informações coletadas
+        # Retorna as informações coletadas  
         yield {
             'tipo_curso': tipo_curso,
             'curso': curso,
             'mensalidade_original': primeiro_mensalidade_original,
             'mensalidade_promo': primeiro_mensalidade_promo,
-            'duracao': duracao
+            'duracao': duracao_curso
         }
 
 
