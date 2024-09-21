@@ -27,5 +27,5 @@ scrapy crawl unisinos -o ../data/cursos_ead.csv
 
 6. Para rodar a ETL
 ```bash
-python src/transformacao/transformacao.py
+python src/transformacao/main.py
 ```
