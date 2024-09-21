@@ -29,3 +29,9 @@ scrapy crawl unisinos -o ../data/cursos_ead.csv
 ```bash
 python src/transformacao/main.py
 ```
+
+7. Para rodar o streamlit
+```bash
+python dashboard/app.py
+```
+
