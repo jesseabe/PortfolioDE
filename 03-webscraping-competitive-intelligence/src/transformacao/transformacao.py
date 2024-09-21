@@ -1,4 +1,5 @@
 import pandas as pd
+import sqlite3
 
 df = pd.read_csv('data/cursos_ead.csv')
 
@@ -13,6 +14,16 @@ df['mensalidade_promo'] = (
 )
 df['mensalidade_promo'] = pd.to_numeric(df['mensalidade_promo'], errors='coerce')
 
-#Salvando os dados transformados
-df.to_csv('data/cursos_ead_transformado.csv', index=False)
+
+#Conectar um banco de dados
+conn = sqlite3.connect('data/quotes.db')
+
+#Salvando no SQLite
+df.to_sql('cursos_ead', conn, if_exists='replace', index=False)
+
+#Fechando a conexao com o banco
+conn.close()
+
+#Vizualizar o df 
+print(df.head())
 
