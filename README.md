@@ -32,9 +32,9 @@ In this project, I utilized Pandera to enforce data quality during the ETL proce
 
 ## Project 2 - Input Validator with Streamlit and Pydantic
 
-**Goal**: Receber arquivos xlsx de usuários não técnicos, realizar um tratamento e validar o schema do arquivo.
+**Goal**: Receive xlsx files from non-technical users, perform processing and validate the file schema.
 
-**Description**: Para o frontend, onde o usuário possa interagir com a interface e realizar o upload dos arquivos xlsx, utilizou-se a biblioteca Streamlit. Para realizar o ETL, utilizou-se pandas e para a validação do schema do arquivo carregado pelo usuário, utilizou-se a biblioteca pydantic, de forma que, caso haja algum desacordo em relação ao arquivo desejado e o enviado, o usuário receba uma mensagem de erro. 
+**Description**: For the frontend, where the user can interact with the interface and upload the xlsx files, the Streamlit library was used. To perform the ETL, pandas was used and to validate the schema of the file uploaded by the user, the pydantic library was used, so that if there is any disagreement in relation to the desired file and the one sent, the user receives an error message.
 
 **Key Features**:
 
@@ -52,9 +52,9 @@ In this project, I utilized Pandera to enforce data quality during the ETL proce
 
 ## Project 3 - Webscraping Competitive Intelligence with Scrapy
 
-**Goal**: Realizar webscraping do site https://ead.unisinos.br, identificar os links de cada curso e iterar sobre a página de cada curso para extrair as informações de tipo_curso, curso, mensalidade_original,mensalidade_promo, duracao. Salvar os dados em um banco de dados e apresentar em um dashboard de Inteligência Competitiva.
+**Goal**: Perform webscraping of the website https://ead.unisinos.br, identify the links for each course and iterate over each course page to extract information on course_type, course, original_monthly_fee, promotional_monthly_fee, duration. Save the data in a database and present it in a Competitive Intelligence dashboard.
 
-**Description**: Para realizaro webscraping, utilizou-se a biblioteca Scrapy. Para a leitura e ETL dos dados utilizou-se a biblioteca Pandas. Como banco de dados utilizou-se SQLite3. Para o dashboard, utilizou-se a biblioteca Streamlit. 
+**Description**: To perform web scraping, the Scrapy library was used. For reading and ETL of the data, the Pandas library was used. SQLite3 was used as the database. For the dashboard, the Streamlit library was used.
 
 **Key Features**:
 
