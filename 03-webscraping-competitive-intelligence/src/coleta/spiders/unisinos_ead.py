@@ -1,7 +1,7 @@
 import scrapy
 
-class UnisinosSpider(scrapy.Spider):
-    name = "unisinos"
+class UnisinosEADSpider(scrapy.Spider):
+    name = "unisinos_ead"
     allowed_domains = ["ead.unisinos.br"]
     start_urls = ["https://ead.unisinos.br/cursos-graduacao"]
 
