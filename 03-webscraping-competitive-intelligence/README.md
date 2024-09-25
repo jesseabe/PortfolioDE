@@ -1,5 +1,14 @@
 # Projeto de Web Scraping para Inteligencia Competitiva
+Este projeto tem como objetivo final coletar dados de um concorrente (neste caso, considera-se que o cliente é uma instituição de ensino que tem como principal serviço cursos de graduação), armazenar os dados de forma estruturada e gerar insights acionáveis sobre os dados coletados. Para este fim, as tecnologias utilizadas foram:
 
+- **Web Scraping**: Scrapy
+- **Transform and load**: Pandas
+- **Storage**: SQLite3
+- **Dashboard**: Streamlit
+
+![Flow](images/webscraping.png)
+
+## Instruções para rodar o projeto
 1. Abre o shell do scrapy
 ```bash
 scrapy shell
@@ -22,7 +31,7 @@ response.text
 
 5. Para rodar o webscraping no git bash: 
 ```bash
-scrapy crawl unisinos -o ../data/cursos_ead.csv
+scrapy crawl unisinos_ead -o ../data/cursos_ead.csv
 ```
 
 6. Para rodar a ETL
@@ -32,6 +41,6 @@ python src/transformacao/main.py
 
 7. Para rodar o streamlit
 ```bash
-python dashboard/app.py
+streamlit run dashboard/app.py
 ```
 
