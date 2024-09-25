@@ -1,29 +1,22 @@
-import pandas as pd
-import sqlite3
+from transformacao.transform_cursos_ead import EADDataProcessor
+from transformacao.transform_cursos_presencial import PresencialDataProcessor
 
-df = pd.read_csv('data/cursos_ead.csv')
+def main():
+    # Processar os dados EAD
+    processor_ead = EADDataProcessor('data/cursos_ead.csv', 'data/quotes.db')
+    processor_ead.load_data()
+    processor_ead.clean_data()
+    processor_ead.save_to_db()
+    processor_ead.show_data()
 
-#Realizando o tratameto nos valores 
-df['mensalidade_original'] = df['mensalidade_original'].str.replace(',', '.')
-df['mensalidade_original'] = pd.to_numeric(df['mensalidade_original'], errors='coerce')
-df['mensalidade_promo'] = (
-    df['mensalidade_promo']
-    .str.replace('*', '', regex=False)  # Remove o asterisco
-    .str.replace(',', '.')              # Substitui a vírgula por ponto
-    .astype(float)                      # Converte para float
-)
-df['mensalidade_promo'] = pd.to_numeric(df['mensalidade_promo'], errors='coerce')
+    # Processar os dados Presencial
+    processor_presencial = PresencialDataProcessor('data/cursos_presencial.csv', 'data/quotes.db')
+    processor_presencial.load_data()
+    processor_presencial.clean_data()
+    processor_presencial.save_to_csv()
+    processor_presencial.save_to_db()
+    processor_presencial.show_data()
 
-
-#Conectar um banco de dados
-conn = sqlite3.connect('data/quotes.db')
-
-#Salvando no SQLite
-df.to_sql('cursos_ead', conn, if_exists='replace', index=False)
-
-#Fechando a conexao com o banco
-conn.close()
-
-#Vizualizar o df 
-print(df.head())
+if __name__ == "__main__":
+    main()
 

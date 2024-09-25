@@ -1,0 +1,71 @@
+tipo_curso,curso,turno,duracao
+Superior de Tecnologia,Design de Produto,Noite,2 anos e meio*
+Bacharelado,Engenharia Agronômica,Noite,5 anos*
+Bacharelado,Engenharia Biomédica,Noite,5 anos*
+Bacharelado,Enfermagem,Manhã,5 anos*
+Bacharelado,Engenharia Civil,Noite,5 anos*
+Bacharelado,Administração,Noturno,4 anos*
+Bacharelado,Engenharia Ambiental,Noite,5 anos*
+Bacharelado,Engenharia Cartográfica e de Agrimensura,Noite,5 anos*
+Bacharelado e Licenciatura,Educação Física,Noturno,4 anos*
+Bacharelado,Comunicação Digital,Noite,4 anos*
+Bacharelado,Ciências Econômicas,Ênfase em Análise de Dados,Noite
+Licenciatura,Ciências Sociais,Noturno,4 anos*
+Bacharelado,Design,Manhã,"3,5 anos*"
+Bacharelado,Ciências Contábeis,Noite,4 anos*
+Superior de Tecnologia,Comércio Exterior,Noturno,"2,5 anos*"
+Bacharelado,Direito,Manhã ou Noite,5 anos*
+Bacharelado,Serviço Social,Noite,4 anos*
+Superior de Tecnologia,Sistemas para Internet,Noturno,3 anos*
+Bacharelado,Relações Públicas,Noite,4 anos*
+Bacharelado,Relações Internacionais,Integral,4 anos*
+Superior de Tecnologia,Segurança da Informação,Noite,3 anos*
+Bacharelado,Sistemas de Informação,Noturno,4 anos*
+Bacharelado,Publicidade e Propaganda,Noite,4 anos*
+Superior de Tecnologia,Redes de Computadores,Noite,3 anos*
+Superior de Tecnologia,Produção Fonográfica,Tarde,3 anos*
+Superior de Tecnologia,Produção Audiovisual,Noite,2 anos e meio*
+Bacharelado e Licenciatura,Psicologia,Manhã ou Noite,5 anos* (Bacharelado) e 1 anos e meio (Licenciatura)
+Licenciatura,Pedagogia,Noite,4 anos*
+Superior de Tecnologia,Processos Gerenciais,Noturno,"2,5 anos*"
+Bacharelado,Nutrição,Noite,4 anos*
+Bacharelado,Moda,Multiturno,4 anos*
+Licenciatura,Matemática,Noite,4 anos*
+Superior de Tecnologia,Logística,Integral,"2,5 anos*"
+Superior de Tecnologia,Marketing,Noite,2 anos e meio*
+Bacharelado,Jornalismo,Noite,4 anos*
+Superior de Tecnologia,Jogos Digitais,Noite,3 anos*
+Licenciatura,Letras,Noite,4 anos*
+Licenciatura,História,Noturno,4 anos*
+Superior de Tecnologia,Gestão da Produção Industrial,Noite,"3,5 anos*"
+Superior de Tecnologia,Gestão Financeira,Noturno,"2,5 anos*"
+Bacharelado,Geologia,Noturno,5 anos*
+Superior de Tecnologia,Gestão de Recursos Humanos,Noturno,"2,5 anos*"
+Superior de Tecnologia,Fotografia,Noite,"2,5 anos*"
+Superior de Tecnologia,Gestão Comercial,Noturno,"2,5 anos*"
+Superior de Tecnologia,Gastronomia,Multiturno*,3 anos**
+Bacharelado,Física Médica,Noite,4 anos*
+Bacharelado,Fisioterapia,Manhã,5 anos*
+Licenciatura,Física,Noturno,4 anos*
+Bacharelado,Farmácia,Noite,5 anos*
+Superior de Tecnologia,Estética e Cosmética,Tarde,3 anos*
+Bacharelado,Engenharia Química,Noite,5 anos*
+Bacharelado,Engenharia Eletrônica,Noite,5 anos*
+Bacharelado,Engenharia Elétrica,Noite,5 anos*
+Bacharelado,Engenharia Mecânica,Noite,5 anos*
+Bacharelado,Engenharia de Materiais,Noite,5 anos*
+Bacharelado ou Licenciatura,Filosofia,Noite,3 anos* no Bacharelado ou 4 anos na Licenciatura*
+Bacharelado,Engenharia de Energia,Noite,5 anos*
+Bacharelado,Engenharia de Produção,Noite,5 anos*
+Bacharelado,Engenharia de Alimentos,Noite,5 anos*
+Bacharelado,Engenharia de Controle e Automação,Noite,5 anos*
+Bacharelado,Biomedicina,Manhã e Noite,4 anos*
+Bacharelado,Engenharia da Computação,Noite,5 anos*
+Bacharelado,"Bacharelado Interdisciplinar em Humanidades, Artes e Tecnologia",Manhã,3 anos*
+Tecnológico,Banco de Dados,Noite,3 anos*
+Bacharelado e Licenciatura,Biologia,Noturno,4 anos*
+Bacharelado,Ciência da Computação,Noturno,4 anos*
+Bacharelado,Arquitetura e Urbanismo,Manhã e Noturno,5 anos*
+Bacharelado,Administração - Gestão para Inovação e Liderança,Integral,4 anos*
+Bacharelado,Administração - Comércio Exterior,Noite,4 anos*
+Superior de Tecnologia,Análise e Desenvolvimento de Sistemas,Noturno,3 anos*
