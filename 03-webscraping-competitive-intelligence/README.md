@@ -6,9 +6,24 @@ Este projeto tem como objetivo final coletar dados de um concorrente (neste caso
 - **Storage**: SQLite3
 - **Dashboard**: Streamlit
 
+## Workflow do projeto
 ![Flow](images/webscraping.png)
 
+## Dados estruturados inseridos no banco
+![Banco_de_dados](images/sqlite.png)
+
+## Dashboard com streamlit
+![Dashboard](images/dashboard.png)
+
 ## Instruções para rodar o projeto
+
+0. Bibliotecas
+```bash
+pip install pandas
+pip install streamlit
+pip install sqlite3
+```
+
 1. Abre o shell do scrapy
 ```bash
 scrapy shell
@@ -32,6 +47,8 @@ response.text
 5. Para rodar o webscraping no git bash: 
 ```bash
 scrapy crawl unisinos_ead -o ../data/cursos_ead.csv
+
+scrapy crawl unisinos_presencial -o ../data/cursos_presencial.csv
 ```
 
 6. Para rodar a ETL
