@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "04-deploy-app-with-docker"
+version = "0.1.0"
+description = ""
+authors = ["Jesse <jesseabe.rodrigues@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.38.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
