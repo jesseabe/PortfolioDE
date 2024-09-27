@@ -11,3 +11,8 @@ docker build ...
 ```bash 
 docker run ...
 ```
+
+
+```bash 
+streamlit run app.py
+```
