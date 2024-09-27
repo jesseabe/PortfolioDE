@@ -1,1 +1,0 @@
-# Deploy de Aplicação de Dados Utilizando Docker
