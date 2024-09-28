@@ -1,6 +1,6 @@
 # Deploy de Aplicação de Dados Utilizando Docker
 
-![Deploy AWS with Docker](images/Flowimage.png)
+![Deploy AWS with Docker](images/Flowdeploy.png)
 
 ```bash 
 git clone https://github.com/jesseabe/PortfolioDE/04-deploy-app-with-docker.git
