@@ -14,8 +14,6 @@ docker build -t nome-da-imagem .
 docker run -d -p 8501:8501 --name deploy-my-app-with-docker-container deploy-my-app-with-docker
 ```
 
-
-
 # Comandos para rodar o projeto na EC2 da AWS
 
 ```bash

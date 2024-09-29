@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio Data Engineer
 Hi my name is Jessé Rodrigues, and welcome to my Github Portfolio.
 This repo contains all of my Data Engineer projects.
 
@@ -72,3 +72,15 @@ In this project, I utilized Pandera to enforce data quality during the ETL proce
 - SQLite3
 - SQL
 
+
+## Project 4 - Deploy with Docker in AWS
+
+**Goal**: Deploy an application to AWS using Docker.
+
+**Description**: Code in streamlit, build the Docker image and deploy it to AWS.
+
+**Technologies Used**:
+
+- Docker
+- AWS
+- Python
