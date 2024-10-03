@@ -68,13 +68,14 @@ def salvar_no_postgres(df, tabela):
 
 def pipeline():
     logs = []
-    url_pasta = 'https://drive.google.com/drive/folders/1maqV7E3NRlHp12CsI4dvrCFYwYi7BAAf'
+    url_pasta = 'https://drive.google.com/drive/folders/1DhYbv0OmoUxoT0GBkUefw_V_Ga4DNVUq'
     diretorio_local = './pasta_gdown'
 
-    # baixar_pasta_google_drive(url_pasta, diretorio_local)
+    baixar_pasta_google_drive(url_pasta, diretorio_local)
     con = conectar_banco()
     inicializar_tabela(con)
     processados = arquivos_processados(con)
+
     arquivos_e_tipos = listar_arquivos_e_tipos(diretorio_local)
 
     for caminho_do_arquivo, tipo in arquivos_e_tipos:
