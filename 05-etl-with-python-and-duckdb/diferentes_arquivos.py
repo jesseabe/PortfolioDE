@@ -13,8 +13,8 @@ def json_to_csv(json_file_path, csv_file_path):
     df.to_csv(csv_file_path, index=False)
 
 # Exemplo de uso:
-csv_file = 'data/vendas_08_01_2024.csv'
-parquet_file = 'data/vendas_08_01_2024.parquet'
+csv_file = 'pasta_gdown/vendas_05_01_2024.csv'
+parquet_file = 'pasta_gdown/vendas_05_01_2024.parquet'
 
 # Converter de CSV para Parquet
 csv_to_parquet(csv_file, parquet_file)
