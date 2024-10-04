@@ -84,3 +84,16 @@ In this project, I utilized Pandera to enforce data quality during the ETL proce
 - Docker
 - AWS
 - Python
+
+## Project 5 - ETL with DuckDB: From Google Drive to PostgreSQL
+
+**Goal**: Automate the process of downloading files from Google Drive, transforming the data, and loading it into a PostgreSQL database hosted on Render using DuckDB for data processing.
+
+**Description**: This project involves downloading files in various formats (.csv, .parquet, and .json) from Google Drive, performing data transformations, applying business rules, and then uploading the processed data to a PostgreSQL database hosted on Render. DuckDB is used as an intermediary for efficient in-memory data processing and transformations before the final load into the PostgreSQL database.
+**Technologies Used**:
+
+- Duckdb
+- Python
+- SQL
+- Render (Cloud)
+- Postgres
