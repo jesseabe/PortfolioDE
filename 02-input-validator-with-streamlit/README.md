@@ -12,7 +12,7 @@ pyenv local 3.12.1
 
 2. Criar um Abiente Virual
 ```bash
-python3.12 -m venv .venv
+python -m venv .venv
 ```
 
 3. Entrar no Ambiente Virtual
