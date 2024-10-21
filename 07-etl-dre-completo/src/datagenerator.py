@@ -48,10 +48,26 @@ def gerar_dados_dre(num_linhas=200):
     
     return pd.DataFrame(dados)
 
-# Gerar a base de dados com 200 linhas
-df_dre = gerar_dados_dre(200)
-df_dre.to_csv("data/dre.csv")
 
-# Exibir as primeiras linhas do DataFrame
-print(df_dre.head())
+if __name__ == "__main__":
+    # Gerar a base de dados
+    df_dre = gerar_dados_dre(1000000)
+    df_dre.to_csv("data/dre.csv")
+    print(df_dre.head())
+    
+    df_dre2 = gerar_dados_dre(1000000)
+    df_dre2.to_csv("data/dre2.csv")
+    print(df_dre2.head())
+    
+    df_dre3 = gerar_dados_dre(1000000)
+    df_dre3.to_csv("data/dre3.csv")
+    print(df_dre3.head())
+
+    df_dre4 = gerar_dados_dre(1000000)
+    df_dre4.to_csv("data/dre4.csv")
+    print(df_dre4.head())
+
+    df_dre5 = gerar_dados_dre(1000000)
+    df_dre5.to_csv("data/dre5.csv")
+    print(df_dre5.head())
 
