@@ -12,4 +12,8 @@ def csv_to_sql(csv_path, db_path, name):
     print("Base salva com sucesso")
 
 if __name__ == "__main__":
-    csv_to_sql("data/dre.csv", "data/dre.db", "dre")
+    #csv_to_sql("data/dre.csv", "data/dre.db", "dre")
+    csv_to_sql("data/dre2.csv", "data/dre.db", "dre")
+    csv_to_sql("data/dre3.csv", "data/dre.db", "dre")
+    csv_to_sql("data/dre4.csv", "data/dre.db", "dre")
+    csv_to_sql("data/dre5.csv", "data/dre.db", "dre")
