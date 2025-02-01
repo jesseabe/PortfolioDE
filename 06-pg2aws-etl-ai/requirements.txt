@@ -1,7 +1,12 @@
+cramjam==2.8.4
+duckdb==1.1.2
 et-xmlfile==1.1.0
+fastparquet==2024.5.0
+fsspec==2024.9.0
 greenlet==3.1.1
 numpy==2.1.2
 openpyxl==3.1.5
+packaging==24.1
 pandas==2.2.3
 psycopg2==2.9.9
 psycopg2-binary==2.9.9
@@ -12,3 +17,4 @@ six==1.16.0
 SQLAlchemy==2.0.35
 typing_extensions==4.12.2
 tzdata==2024.2
+xlsx2csv==0.8.3

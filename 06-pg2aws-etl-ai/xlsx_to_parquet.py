@@ -2,7 +2,6 @@ import pandas as pd
 import os
 import openpyxl
 import csv
-import os
 import duckdb
 
 # Utilizando Pandas
